@@ -38,7 +38,7 @@ async function getMessages(room, client) {
 // Set static folder
 app.use(express.static(path.join(__dirname, "public")));
 
-const botName = "ChatCord Bot";
+const botName = "ChitChat App";
 
 // Initialize chatMessages array to store messages locally
 const chatMessages = [];
@@ -52,7 +52,7 @@ const chatMessages = [];
       socket.join(user.room);
 
       // Welcome current user
-      socket.emit("message", formatMessage(botName, "Welcome to ChatCord!"));
+      socket.emit("message", formatMessage(botName, "Welcome to ChitChat App"));
 
       // Broadcast when a user connects
       socket.broadcast

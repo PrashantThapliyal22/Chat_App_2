@@ -1,5 +1,5 @@
 {
-  "name": "chit_chat",
+  "name": "chit_chat App",
   "version": "1.0.0",
   "description": "Realtime chat app with rooms",
   "main": "server.js",
